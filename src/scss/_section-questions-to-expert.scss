@@ -1,0 +1,109 @@
+.questions-to-expert {
+  background-color: $LightBlue;
+
+  &__list {
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__item {
+    max-width: 373px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      height: 58px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &__author {
+    margin: 40px 0 20px;
+  }
+
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__link {
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+  }
+
+  @include media-custom(1200px) {
+    &__item {
+      max-width: 300px;
+    }
+  }
+
+  @include media-1024 {
+    &__list {
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    &__item {
+      max-width: 300px;
+
+      &:nth-child(n+3) {
+        display: none;
+      }
+    }
+  }
+
+  @include media-sm {
+    background-color: #fff;
+
+    &__list {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 40px 0;
+
+      &:nth-child(2) {
+        position: relative;
+        z-index: 2;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -75%;
+          width: 200vw;
+          height: 100%;
+          background-color: $LightYellow;
+          z-index: -1;
+        }
+      }
+      &-title {
+        font-size: 18px;
+        line-height: 22px;
+        height: 44px;
+      }
+    }
+
+    &__author {
+      margin: 20px 0;
+    }
+
+    &__link {
+      margin-top: 27px;
+    }
+  }
+}

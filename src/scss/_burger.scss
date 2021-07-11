@@ -1,0 +1,53 @@
+#burger {
+  width: 43px;
+  height: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 1px;
+    background-color: $Black;
+
+    &:first-child {
+      width: 34px;
+    }
+
+    &:nth-child(2) {
+      width: 43px;
+    }
+
+    &:last-child {
+      width: 37px;
+    }
+  }
+
+  &:hover {
+    span {
+      background-color: $Orange;
+    }
+  }
+
+  @include media-sm {
+    width: 24px;
+    height: 16px;
+
+    span {
+      &:first-child {
+        width: 19px;
+      }
+
+      &:nth-child(2) {
+        width: 24px;
+      }
+
+      &:last-child {
+        width: 20px;
+      }
+    }
+  }
+}

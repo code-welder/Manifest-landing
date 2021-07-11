@@ -1,0 +1,53 @@
+.category-link {
+  display: block;
+  color: $DarkBlue;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:hover {
+    color: $Orange;
+  }
+}
+
+.text-content {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.article-title {
+  margin: 0;
+  font-family: $secondaryFont;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+@include media-sm {
+  .category-link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .article-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .text-content {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@include media-xs {
+  .article-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .text-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

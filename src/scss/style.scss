@@ -1,0 +1,51 @@
+@import './mixins/media';
+@import './mixins/font';
+
+@import './common/_normalize';
+@import './common/_variables';
+@import './common/_global';
+@import './common/_fonts';
+
+@import './_common-classes';
+@import './_icons';
+@import './_buttons';
+@import './_blocks';
+@import './_burger';
+@import './_header';
+@import './_footer';
+/*! purgecss start ignore */
+@import './_popup-menu';
+/*! purgecss end ignore */
+@import './_section';
+@import './_section-articles';
+@import './_section-expert-columns';
+@import './_section-questions-to-expert';
+@import './_section-popular';
+
+/*! purgecss start ignore */
+/*! purgecss end ignore */
+
+body {
+  font-family: $primaryFont;
+  color: $Black;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @include media-sm {
+    padding: 0 24px;
+  }
+
+  @include media-xs {
+    padding: 0 20px;
+  }
+}

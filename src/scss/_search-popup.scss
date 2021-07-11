@@ -21,6 +21,7 @@
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   &__close-btn {
@@ -71,5 +72,11 @@
 
   &--open {
     top: 0;
+  }
+
+  @include media-xs {
+    &__popular-req {
+      flex-direction: column;
+    }
   }
 }

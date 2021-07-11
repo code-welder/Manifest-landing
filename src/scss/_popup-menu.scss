@@ -108,11 +108,9 @@
     }
   }
 
-  /*! purgecss start ignore */
   &--open {
     top: 0;
   }
-  /*! purgecss end ignore */
 
   @include media-sm {
     height: 100%;

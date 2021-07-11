@@ -13,17 +13,13 @@
 @import './_burger';
 @import './_header';
 @import './_footer';
-/*! purgecss start ignore */
 @import './_popup-menu';
-/*! purgecss end ignore */
+@import './_search-popup';
 @import './_section';
 @import './_section-articles';
 @import './_section-expert-columns';
 @import './_section-questions-to-expert';
 @import './_section-popular';
-
-/*! purgecss start ignore */
-/*! purgecss end ignore */
 
 body {
   font-family: $primaryFont;

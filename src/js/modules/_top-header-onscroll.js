@@ -3,6 +3,7 @@
 const topHeader = document.querySelector('.header__top')
 const headerBottom = document.querySelector('.header__bottom')
 
+// save space for header__top, because header__top position = fixed
 headerBottom.style.marginTop = window.getComputedStyle(topHeader).height
 
 window.addEventListener('scroll', () => {

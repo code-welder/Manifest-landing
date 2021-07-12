@@ -23,7 +23,7 @@
   font-weight: 700;
 }
 
-@include media-sm {
+@include media-1024 {
   .category-link {
     font-size: 12px;
     line-height: 16px;
@@ -40,10 +40,10 @@
   }
 }
 
-@include media-xs {
+@include media-sm {
   .article-title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .text-content {

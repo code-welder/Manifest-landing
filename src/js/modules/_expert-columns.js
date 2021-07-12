@@ -3,7 +3,6 @@ $(document).ready(function() {
 
   expertColumnsSlider.slick({
     dots: false,
-    infinite: false,
     speed: 500,
     slidesToShow: 2,
     arrows: true,
@@ -11,13 +10,13 @@ $(document).ready(function() {
     nextArrow: $('.expert-columns__btn-next'),
     responsive: [
       {
-          breakpoint: 770,
+          breakpoint: 768,
           settings: "unslick"
       }
     ],
   });
 
-  if ($(window).width() <= 770) {
+  if ($(window).width() <= 769) {
 
     $('.expert-columns__item').slice(0, 2).show()
 

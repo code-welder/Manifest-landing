@@ -50,13 +50,18 @@
 
   @include media-1024 {
     &__item {
-      max-width: 301px;
+      max-width: 295px;
     }
   }
 
   @include media-sm {
+    &::before,
+    &::after {
+      content: none;
+    }
+
     &__item {
-      max-width: 350px;
+      max-width: 340px;
     }
   }
 

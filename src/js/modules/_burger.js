@@ -1,15 +1,9 @@
-const burgerBtn = document.querySelector('#burger')
-const popupMenu = document.querySelector('#popup-menu')
-const popupMenuBtn = document.querySelector('.popup-menu__close-btn')
+$('#burger').on('click', function() {
+  $('#popup-menu').addClass('popup-menu--open')
+  $('body').css('overflow', 'hidden');
 
-burgerBtn.onclick = (e) => {
-  popupMenu.classList.add('popup-menu--open')
-  document.body.style.overflow = "hidden";
-  document.body.style.height = "100%";
-
-  popupMenuBtn.addEventListener('click', () => {
-    popupMenu.classList.remove('popup-menu--open')
-    document.body.style.overflow = "auto";
-    document.body.style.height = "auto";
-  }, {once: true})
-}
+  $('.popup-menu__close-btn').on('click', function() {
+    $('#popup-menu').removeClass('popup-menu--open')
+    $('body').css('overflow', 'auto');
+  })
+})

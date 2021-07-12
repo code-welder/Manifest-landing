@@ -2,7 +2,7 @@ $(document).ready(function() {
   const popularList = $('.popular__list').masonry({
     itemSelector: '.popular__item',
     isFitWidth: true,
-    gutter: 40,
+    gutter: 30,
   })
 
   popularList.imagesLoaded().progress( function() {

@@ -2,7 +2,7 @@ $(document).ready(function() {
   const articlesList = $('.articles__list').masonry({
     itemSelector: '.articles__item',
     isFitWidth: true,
-    gutter: 40,
+    gutter: 30,
   })
 
   articlesList.imagesLoaded().progress( function() {
